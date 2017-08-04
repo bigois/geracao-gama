@@ -15,7 +15,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
     webkit-tap-highlight-color: #fed136
 }
 
@@ -300,17 +300,14 @@ header .intro-text .intro-heading {
         font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 75px;
+        font-size: 65px;
         line-height: 75px;
         margin-bottom: 50px
     }
 }
 
 #portfolio .portfolio-item .portfolio-caption p,
-section h3.section-subheading {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic
-}
+section h3.section-subheading {}
 
 section {
     padding: 100px 0
@@ -326,12 +323,11 @@ section h3.section-subheading {
     font-size: 16px;
     text-transform: none;
     font-weight: 400;
-    margin-bottom: 75px
 }
 
 @media (min-width:768px) {
     section {
-        padding: 150px 0
+        padding: 40px 0
     }
 }
 
@@ -842,4 +838,31 @@ img::selection {
 
 img::-moz-selection {
     background: 0 0
+}
+
+.circles {
+    width: 70%;
+}
+
+
+@media (max-width: 800px) {
+    .circles {
+        width: 50%;
+    }
+    header .intro-text .intro-heading {
+        font-size: 35px;
+    }
+    .btn-xl {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    section {
+        padding: 40px 0;
+    }
+    section h2.section-heading {
+        font-size: 30px;
+    }
+    .mob-justify {
+        text-align: justify;
+    }
 }
